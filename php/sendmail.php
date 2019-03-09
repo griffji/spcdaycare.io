@@ -16,36 +16,32 @@ if($_POST)
 	//Sanitize input data using PHP filter_var().
 	$user_name		= filter_var($_POST["user_name"], FILTER_SANITIZE_STRING);
 	$user_email		= filter_var($_POST["user_email"], FILTER_SANITIZE_EMAIL);
-	$subject		= filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
+	$subject		= filter_var($_POST["subject"], FILTER_SANITIZE_EMAIL);
 	$message		= filter_var($_POST["msg"], FILTER_SANITIZE_STRING);
 	
 	//additional php validation
 	if(strlen($user_name)<2){ // If length is less than 4 it will output JSON error.
-		$output = json_encode(array('type'=>'error', 'text' => '<p>Name is too short or empty!</p>'));
+		$output = json_encode(array('type'=>'error', 'text' => '<div class="alert alert-danger" role="alert">Name is too short or empty!</div>'));
 		die($output);
 	}
 	if(!filter_var($user_email, FILTER_VALIDATE_EMAIL)){ //email validation
-		$output = json_encode(array('type'=>'error', 'text' => '<p>Please enter a valid email!</p>'));
+		$output = json_encode(array('type'=>'error', 'text' => '<div class="alert alert-danger" role="alert">Please enter a valid email!</div>'));
 		die($output);
-	}
-	if(strlen($subject)<3){ //check emtpy subject
-		$output = json_encode(array('type'=>'error', 'text' => '<p>Subject is required</p>'));
-		die($output);
-	}
+	}	
 	if(strlen($message)<3){ //check emtpy message
-		$output = json_encode(array('type'=>'error', 'text' => '<p>Too short message! Please enter something.</p>'));
+		$output = json_encode(array('type'=>'error', 'text' => '<div class="alert alert-danger" role="alert">Too short message! Please enter something.</div>'));
 		die($output);
 	}
 	
 	//email body
-	$message_body = $message."\r\n\r\n-".$user_name."\r\nsubject : ".$subject."\r\nEmail : ".$user_email;
+	$message_body = "\r\nName:".$user_name."\r\nSubject: ".$subject."\r\nEmail: ".$user_email."\r\nMessage: ".$message;
 	
 	//proceed with PHP email.
 	$headers = 'From: '.$user_name.'' . "\r\n" .
 	'Reply-To: '.$user_email.'' . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
 	
-	$send_mail = mail($to_email, $subject, $message_body, $headers);
+	$send_mail = mail($to_email, "\rMessage", $message_body, $headers);
 	
 	if(!$send_mail)
 	{
@@ -54,7 +50,7 @@ if($_POST)
 		die($output);
 	}else{
 		$output = json_encode(array('type'=>'message', 'text' => '<div class="alert alert-success" role="alert">
-		Hi '.$user_name .', Thank you very much for your message,we will contact you soon.</div>'));
+		Hi '.$user_name .', Thank you very much for your message, we will contact you soon.</div>'));
 		die($output);
 	}
 }

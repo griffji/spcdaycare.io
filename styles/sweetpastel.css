@@ -1,0 +1,220 @@
+/*
+  Little Ones - HTML Template
+  "Sweet Pastel" Color Scheme
+ 
+*/
+/*________ Dark Blue ________  */
+
+.pager li>a:hover,
+.pager li > a,
+.pager li > span,
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.blog-tags a:hover,
+.blog-tags a:focus,
+.pagination>li>a:hover,
+.pagination>li>a:focus,
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover,
+.list-group-item,
+.nav-pills>li>a,
+.img-hover,
+.panel-heading a.collapsed,
+.label.default,
+.btn-primary.focus,
+.btn-primary:focus,
+.bg-color2,
+.dropdown-menu,
+.img-description,
+.btn:focus,
+.owl-next:hover,
+.owl-prev:hover,
+.blog-prev:hover .hover,
+.date-category,
+.blog-prev .date,
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover,
+.pricingTable .heading,
+#about .media-heading,
+.sidebar-header,
+.btn:hover,
+.btn.btn-color2:hover,
+.btn.btn-color2:active,
+.btn.btn-color2:active:focus,
+.btn.btn-color2:active:hover,
+.pricingTable:hover,
+.pricingTable:hover:before,
+.pricingTable:hover:after,
+.our-team .social-icon li a,
+.owl-dot.active,
+.owl-dot:hover,
+.blog-prev .blog-caption,
+.header-text {
+    background-color: #2D808D;
+}
+.smaller.social-media a i:hover,
+.back-to-top i:hover,
+ul.custom li:before,
+.nav .open>a,
+.nav .open>a:hover,
+.blog-post .post-info i,
+.navbar-custom li:after,
+a:hover,
+a:focus {
+    color: #2D808D;
+}
+.comment,
+.comments-block .media-object,
+.small-heading,
+.search-group .form-control,
+.social-media a i:hover,
+.img-blog img:hover,
+#elements h3.sub-header,
+.section-heading hr,
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th,
+.nav-tabs,
+.slide img,
+.form-control,
+.img-curved {
+    border-color: #2D808D;
+}
+/*________  Red ________  */
+
+.smaller.social-media a i,
+.post-info i,
+i,
+.blog-post h3 a:hover,
+.page-header h2,
+.small-heading,
+.bounce1:after,
+.social-media a i,
+.back-to-top i,
+.nav.nav-tabs > li.active > a:focus,
+.nav.nav-tabs>li.active>a,
+.testimonial .description:before,
+#about .media i,
+a,
+blockquote:before,
+.social-media a i:hover,
+ul.custom li:before,
+.pricingTable .price-value {
+    color: #DF2935;
+}
+a.list-group-item:focus,
+a.list-group-item:hover,
+button.list-group-item:focus,
+button.list-group-item:hover,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover,
+.pager li > a:hover,
+.pager li > a:focus,
+.blog-tags a,
+.our-team .social-icon li a:hover,
+.btn .btn-primary,
+.pagination>li>a,
+.pagination>li>span,
+.input-group.date .input-group-addon,
+.owl-theme .owl-dots .owl-dot span,
+.owl-theme .owl-dots .owl-dot span:before,
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span,
+#elements h3.sub-header,
+.panel-heading a:hover,
+.back-to-top:hover,
+.our-team .team-info,
+.alert.alert-success,
+.back-to-top,
+.spinner > div,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover,
+.bg-color1,
+.navbar-custom .nav a:hover,
+.navbar-custom .nav > .active > a,
+.nav-tabs li a:before,
+.navbar-custom ul li a:after,
+.our-team:hover .team-info,
+.jumbo-heading,
+.btn.btn-primary,
+.btn {
+    background-color: #DF2935;
+}
+.elements h5,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover,
+.form-control:focus,
+select.form-control,
+.img-border,
+.navbar,
+.testimonial-review img,
+.blog-post,
+.sub-heading span,
+.well,
+.our-team img {
+    border-color: #DF2935;
+}
+#curveDownColor1 path {
+    fill: #DF2935;
+}
+/*________  Green  ________  */
+
+.bg-color3,
+.panel-heading a,
+.owl-next,
+.owl-prev,
+.navbar,
+blockquote,
+.btn-color2,
+.btn:hover,
+.nav-pills>li.active>a,
+.nav.nav-pills > li > a:focus,
+.nav.nav-pills > li > a:hover,
+.nav.nav-pills > li > .active,
+.btn-primary:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.nav-tabs li.active a:before {
+    background-color: #75BA83;
+}
+.jumbotron,
+#elements h5.sub-header,
+.img-circle,
+.blog-post,
+.sidebar,
+.accordion-group {
+    border-color: #75BA83;
+}
+.hr,
+#about .media:hover i,
+.section-heading hr:after {
+    color: #75BA83;
+}
+/*________   Light Blue  ________  */
+
+.bg-color4,
+footer {
+    background-color: #CCDEFE;
+}
+/*________  Pale Yellow ________  */
+
+.bg-lightcolor1,
+.pricingTable,
+.pricingTable:before,
+.pricingTable:after,
+.sidebar,
+.bubble,
+.tab-content .tab-pane {
+    background-color: #F5F3BB;
+}
+.img-blog {
+    border-color: #F5F3BB;
+}
