@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 		//Open street  Map
-		var coord = [40.738270, -74.008911]; // <--- coordinates here
+		var coord = [40.7173469,-74.283367]; // <--- coordinates here
 
 		var map = L.map('map-canvas', { scrollWheelZoom:false}).setView(coord, 19);
 
@@ -21,6 +21,6 @@ $(document).ready(function () {
 		iconAnchor:   [32, 63] // point of the icon which will correspond to marker's location
 		});
 
-		// marker object, pass custom icon as option, add to map         
+		// marker object, pass custom icon as option, add to map
 		var marker = L.marker(coord, {icon: customIcon}).addTo(map);
 });
